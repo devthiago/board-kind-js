@@ -78,4 +78,14 @@ describe('createBoard function', () => {
     ]);
   });
 
+  test('returns a board with elements', () => {
+    expect(createBoard(5, 5, '', createBoardElement(2, 2, 'M', true))).toEqual([
+      ['M', 'M', '', '', ''],
+      ['M', 'M', '', '', ''],
+      ['', '', '', '', ''],
+      ['', '', '', '', ''],
+      ['', '', '', '', '']
+    ]);
+  });
+
 });
